@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyCargAsc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+        <TextView
+            android:id="@+id/lblnro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/colorAccent"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/ibGuardaLectura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtLecturaCrg"
+            android:layout_alignLeft="@+id/ibSelecCargaCrg"
+            android:layout_alignStart="@+id/ibSelecCargaCrg"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@drawable/ingresa_g"
+            tools:style="@android:style/Widget.Holo.Light.ImageButton" />
+
+        <ImageButton
+            android:id="@+id/ibSelecCargaCrg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtLecturaCrg"
+            android:layout_alignEnd="@+id/textView29"
+            android:layout_alignRight="@+id/textView29"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@drawable/mancuerna_g"
+            tools:style="@android:style/Widget.Holo.Light.ImageButton" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="Prueba de Carga"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/lblTituloNro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lblnro"
+            android:layout_centerHorizontal="true"
+            android:text="Lectura Ascendente N°: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblTituloNro"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/lblTituloNro"
+            android:layout_toStartOf="@+id/lblTituloNro"
+            android:text="Carga:" />
+
+        <EditText
+            android:id="@+id/txtCargaCrg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:height="30dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_alignBaseline="@+id/textView31"
+            android:layout_alignBottom="@+id/textView31"
+            android:layout_alignLeft="@+id/textView29"
+            android:layout_alignStart="@+id/textView29" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtLecturaCrg"
+            android:layout_alignBottom="@+id/txtLecturaCrg"
+            android:layout_alignLeft="@+id/textView31"
+            android:layout_alignStart="@+id/textView31"
+            android:text="Lectura:" />
+
+        <EditText
+            android:id="@+id/txtLecturaCrg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:height="30dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/txtCargaCrg"
+            android:layout_alignLeft="@+id/txtCargaCrg"
+            android:layout_alignStart="@+id/txtCargaCrg" />
+
+        <Button
+            android:id="@+id/btGuardarAsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lbUniLec_crg_asc"
+            android:layout_toEndOf="@+id/lblTituloNro"
+            android:layout_toRightOf="@+id/lblTituloNro"
+            android:text="Concluir Lecturas Asc" />
+
+
+        <Switch
+            android:id="@+id/swCrgSust_crg_asc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibGuardaLectura"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/textView31"
+            android:layout_toRightOf="@+id/textView31"
+            android:text="Activar Cargas de Sustitución    " />
+
+        <TextView
+            android:id="@+id/lbuniCrg_crg_asc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtCargaCrg"
+            android:layout_alignBottom="@+id/txtCargaCrg"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:id="@+id/lbUniLec_crg_asc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtLecturaCrg"
+            android:layout_alignBottom="@+id/txtLecturaCrg"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/lbEtiq_masa_crg_asc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masa en pesas:"
+            android:layout_marginTop="41dp"
+            android:layout_below="@+id/txtAjuste"
+            android:layout_alignLeft="@+id/lbajuste"
+            android:layout_alignStart="@+id/lbajuste" />
+
+        <TextView
+            android:id="@+id/lbUnidadAjuste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtCrg_mas_peso"
+            android:layout_toRightOf="@+id/txtCrg_mas_peso"
+            android:layout_toEndOf="@+id/txtCrg_mas_peso" />
+
+        <TextView
+            android:id="@+id/lblUnidadLec_comb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtLecturaCombinada"
+            android:layout_toRightOf="@+id/txtCrg_mas_peso"
+            android:layout_toEndOf="@+id/txtCrg_mas_peso" />
+
+        <TextView
+            android:id="@+id/lbuni_masa_crg_asc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtMasPeso"
+            android:layout_toRightOf="@+id/txtMasPeso"
+            android:layout_toEndOf="@+id/txtMasPeso" />
+
+        <TextView
+            android:id="@+id/lbEtiq_crg_sust_crg_asc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carga de Sustitución:"
+            android:layout_alignBaseline="@+id/txtCrgSust_crg_asc"
+            android:layout_alignBottom="@+id/txtCrgSust_crg_asc"
+            android:layout_alignLeft="@+id/textView32"
+            android:layout_alignStart="@+id/textView32" />
+
+        <EditText
+            android:id="@+id/txtCrgSust_crg_asc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:height="30dp"
+            android:ems="10"
+            android:inputType="number|numberDecimal"
+            android:layout_below="@+id/swCrgSust_crg_asc"
+            android:layout_alignRight="@+id/ibGuardaLectura"
+            android:layout_alignEnd="@+id/ibGuardaLectura" />
+
+        <TextView
+            android:id="@+id/lbUni_crg_sust_crg_asc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtCrgSust_crg_asc"
+            android:layout_toEndOf="@+id/txtCrgSust_crg_asc"
+            android:layout_toRightOf="@+id/txtCrgSust_crg_asc" />
+
+        <Button
+            android:id="@+id/btAplicar_Crg_asc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lbEtiq_crg_sust_crg_asc"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="0dp"
+            android:text="Aplicar Crg. Sust." />
+
+        <TextView
+            android:id="@+id/lbEtiq_crg_sust_crg_asc_maspeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carga + pesas:"
+            android:layout_alignBaseline="@+id/txtCrg_mas_peso"
+            android:layout_alignBottom="@+id/txtCrg_mas_peso"
+            android:layout_alignLeft="@+id/lbEtiq_masa_crg_asc"
+            android:layout_alignStart="@+id/lbEtiq_masa_crg_asc" />
+
+        <GridView
+            android:id="@+id/gvVistaAsc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="20dp"
+            android:horizontalSpacing="1dp"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"
+            android:layout_below="@+id/lbLecturaSust"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp" />
+
+        <EditText
+            android:id="@+id/txtMasPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_alignBottom="@+id/lbEtiq_masa_crg_asc"
+            android:layout_alignLeft="@+id/txtCrgSust_crg_asc"
+            android:layout_alignStart="@+id/txtCrgSust_crg_asc" />
+
+
+
+        <TextView
+            android:id="@+id/lbajuste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajuste requerido:"
+            android:layout_alignBaseline="@+id/txtAjuste"
+            android:layout_alignBottom="@+id/txtAjuste"
+            android:layout_alignLeft="@+id/lbEtiq_crg_sust_crg_asc"
+            android:layout_alignStart="@+id/lbEtiq_crg_sust_crg_asc" />
+
+        <EditText
+            android:id="@+id/txtAjuste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/txtCrgSust_crg_asc"
+            android:layout_alignLeft="@+id/txtCrgSust_crg_asc"
+            android:layout_alignStart="@+id/txtCrgSust_crg_asc" />
+
+        <ImageButton
+            android:id="@+id/ibvisto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btGuardarAsc"
+            android:layout_alignStart="@+id/btGuardarAsc"
+            android:layout_alignTop="@+id/lbUni_crg_sust_crg_asc"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@drawable/visto_g" />
+
+        <ImageButton
+            android:id="@+id/ibseteo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lbuni_masa_crg_asc"
+            android:layout_alignLeft="@+id/ibvisto"
+            android:layout_alignStart="@+id/ibvisto"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@drawable/mancuerna_g" />
+
+        <EditText
+            android:id="@+id/txtCrg_mas_peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/lbuni_masa_crg_asc"
+            android:layout_alignLeft="@+id/txtCrgSust_crg_asc"
+            android:layout_alignStart="@+id/txtCrgSust_crg_asc" />
+
+
+        <TextView
+            android:id="@+id/lbLecturaSust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lectura (Crg+P):"
+            android:layout_above="@+id/lblUnidadLec_comb"
+            android:layout_alignLeft="@+id/lbEtiq_crg_sust_crg_asc_maspeso"
+            android:layout_alignStart="@+id/lbEtiq_crg_sust_crg_asc_maspeso" />
+
+        <EditText
+            android:id="@+id/txtLecturaCombinada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/lbUnidadAjuste"
+            android:layout_alignLeft="@+id/txtCrg_mas_peso"
+            android:layout_alignStart="@+id/txtCrg_mas_peso" />
+
+        <ImageButton
+            android:id="@+id/ibmas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ibseteo2"
+            android:layout_alignStart="@+id/ibseteo2"
+            android:layout_below="@+id/lbEtiq_crg_sust_crg_asc_maspeso"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@drawable/ingresa_g" />
+
+        <TextView
+            android:id="@+id/lbUni_pesasAjuste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtAjuste"
+            android:layout_toEndOf="@+id/txtAjuste"
+            android:layout_toRightOf="@+id/txtAjuste" />
+
+        <ImageButton
+            android:id="@+id/ibvisto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@drawable/visto_g"
+            android:layout_alignTop="@+id/ibseteo2"
+            android:layout_toRightOf="@+id/ibseteo2"
+            android:layout_toEndOf="@+id/ibseteo2" />
+
+        <ImageButton
+            android:id="@+id/ibborra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ibvisto2"
+            android:layout_alignStart="@+id/ibvisto2"
+            android:layout_alignTop="@+id/ibmas"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@drawable/borra_g" />
+</RelativeLayout>
+

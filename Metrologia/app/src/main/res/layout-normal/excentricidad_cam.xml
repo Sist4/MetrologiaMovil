@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_encuadrado">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Prueba de Excentricidad (Exc.) 1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carga (1/3 Max.):"
+        android:textSize="12dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/btAplicarCargaSust"
+        android:layout_alignLeft="@+id/btAplicarCargaSust"
+        android:layout_alignStart="@+id/btAplicarCargaSust" />
+
+    <EditText
+        android:id="@+id/txtCargaExc_ii"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:width="80dp"
+        android:height="30dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:layout_alignBaseline="@+id/textView17"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_toRightOf="@+id/textView17"
+        android:layout_toEndOf="@+id/textView17"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp" />
+
+    <ImageButton
+        android:id="@+id/ibSelecCarga"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtCargaExc_ii"
+        android:layout_alignEnd="@+id/textView16"
+        android:layout_alignRight="@+id/textView16"
+        android:backgroundTint="@android:color/transparent"
+        app:srcCompat="@drawable/mancuerna_g"
+        tools:style="@android:style/Widget.Holo.Light.ImageButton" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio:"
+        android:layout_below="@+id/txtCargaExc_ii"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Centro:"
+        android:textSize="12dp"
+        android:layout_alignBaseline="@+id/textView18"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_alignRight="@+id/txtExct_max_iii"
+        android:layout_alignEnd="@+id/txtExct_max_iii" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final:"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignLeft="@+id/ibSelecCarga"
+        android:layout_alignStart="@+id/ibSelecCarga" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exct. máx:"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/txtpos4"
+        android:layout_alignLeft="@+id/txtpos4"
+        android:layout_alignStart="@+id/txtpos4" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="e.m.p.:"
+        android:layout_alignBaseline="@+id/txt_e_m_p_ex_iii"
+        android:layout_alignBottom="@+id/txt_e_m_p_ex_iii"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23" />
+
+    <EditText
+        android:id="@+id/txtpos1"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="80dp"
+        android:height="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textView18"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18" />
+
+    <EditText
+        android:id="@+id/txtpos2"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="80dp"
+        android:height="30dp"
+        android:elevation="0dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/txtpos1"
+        android:layout_alignBottom="@+id/txtpos1"
+        android:layout_alignLeft="@+id/txtCargaExc_ii"
+        android:layout_alignStart="@+id/txtCargaExc_ii" />
+
+    <EditText
+        android:id="@+id/txtpos3"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="80dp"
+        android:height="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/txtpos2"
+        android:layout_alignBottom="@+id/txtpos2"
+        android:layout_alignLeft="@+id/ibSelecCarga"
+        android:layout_alignStart="@+id/ibSelecCarga" />
+
+    <EditText
+        android:id="@+id/txtExct_max_iii"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:width="80dp"
+        android:height="30dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/textView23"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_toRightOf="@+id/txtpos4"
+        android:layout_toEndOf="@+id/txtpos4" />
+
+    <EditText
+        android:id="@+id/txt_e_m_p_ex_iii"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:width="80dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/txtExct_max_iii"
+        android:layout_alignLeft="@+id/txtExct_max_iii"
+        android:layout_alignStart="@+id/txtExct_max_iii" />
+
+    <Button
+        android:id="@+id/btGuarda"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_below="@+id/tx_mas_menos_e_cam1"
+        android:layout_toRightOf="@+id/txtpos5"
+        android:layout_toEndOf="@+id/txtpos5"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/lblResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="12dp"
+        tools:text="lRes"
+        android:layout_alignBaseline="@+id/tx_mas_menos_e_cam1"
+        android:layout_alignBottom="@+id/tx_mas_menos_e_cam1"
+        android:layout_alignLeft="@+id/txtpos6"
+        android:layout_alignStart="@+id/txtpos6" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:text="Entrada"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/txtCargaExc_ii"
+        android:layout_alignLeft="@+id/textView51"
+        android:layout_alignStart="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:text="Retorno"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/txtpos1"
+        android:layout_toLeftOf="@+id/textView23"
+        android:layout_toStartOf="@+id/textView23"
+        android:layout_marginRight="56dp"
+        android:layout_marginEnd="56dp" />
+
+    <EditText
+        android:id="@+id/txtpos4"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="80dp"
+        android:height="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/textView51"
+        android:layout_alignBottom="@+id/textView51"
+        android:layout_alignLeft="@+id/txtpos1"
+        android:layout_alignStart="@+id/txtpos1" />
+
+    <EditText
+        android:id="@+id/txtpos6"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="80dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:height="30dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/txtpos4"
+        android:layout_alignBottom="@+id/txtpos4"
+        android:layout_alignLeft="@+id/txtpos3"
+        android:layout_alignStart="@+id/txtpos3" />
+
+    <TextView
+        android:id="@+id/txtUnid"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_toEndOf="@+id/txtCargaExc_ii"
+        android:layout_toRightOf="@+id/txtCargaExc_ii"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+
+    <Switch
+        android:id="@+id/swCrgSustitucion"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showText="true"
+        android:text="Permitir el ingreso manual de la Carga"
+        android:textOff="No"
+        android:textOn="Si"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignRight="@+id/textView16"
+        android:layout_alignEnd="@+id/textView16" />
+
+    <Button
+        android:id="@+id/btAplicarCargaSust"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/swCrgSustitucion"
+        android:layout_alignLeft="@+id/swCrgSustitucion"
+        android:layout_alignRight="@+id/swCrgSustitucion"
+        android:layout_alignStart="@+id/swCrgSustitucion"
+        android:layout_below="@+id/swCrgSustitucion"
+        android:text="Aplicar Carga Manual"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="±e"
+        android:layout_alignBaseline="@+id/lblResultado"
+        android:layout_alignBottom="@+id/lblResultado"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24" />
+
+    <EditText
+        android:id="@+id/tx_mas_menos_e_cam1"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="80dp"
+        android:height="30dp"
+        android:textColor="@color/colorAccent"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/txt_e_m_p_ex_iii"
+        android:layout_alignLeft="@+id/txt_e_m_p_ex_iii"
+        android:layout_alignStart="@+id/txt_e_m_p_ex_iii" />
+
+    <EditText
+        android:id="@+id/txtpos5"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="80dp"
+        android:height="30dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:nextFocusDown="@id/txtpos6"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignBaseline="@+id/txtpos4"
+        android:layout_alignBottom="@+id/txtpos4"
+        android:layout_alignLeft="@+id/txtpos2"
+        android:layout_alignStart="@+id/txtpos2" />
+
+</RelativeLayout>

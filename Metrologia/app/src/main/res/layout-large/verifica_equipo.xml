@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LyVerificaEquipo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_encuadrado"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Datos del Equipo"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblDescripcionEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDescripcionEquipo"
+        android:layout_alignBottom="@+id/txtDescripcionEquipo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:text="Descripción:" />
+
+    <EditText
+        android:id="@+id/txtDescripcionEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="120dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="12dp"
+        android:layout_alignBaseline="@+id/txtIdentificacionEquipo"
+        android:layout_alignBottom="@+id/txtIdentificacionEquipo"
+        android:layout_toLeftOf="@+id/lblUnidad_d"
+        android:layout_toStartOf="@+id/lblUnidad_d" />
+
+    <TextView
+        android:id="@+id/lblIdentificacionEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identificación:"
+        android:layout_alignBaseline="@+id/txtIdentificacionEquipo"
+        android:layout_alignBottom="@+id/txtIdentificacionEquipo"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/txtIdentificacionEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:width="120dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="12dp"
+        android:layout_below="@+id/textView7"
+        android:layout_toRightOf="@+id/lblUnidad_e"
+        android:layout_toEndOf="@+id/lblUnidad_e" />
+
+    <TextView
+        android:id="@+id/lblMarcaEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMarcaEquipo"
+        android:layout_alignBottom="@+id/txtMarcaEquipo"
+        android:layout_alignLeft="@+id/lblDescripcionEquipo"
+        android:layout_alignStart="@+id/lblDescripcionEquipo"
+        android:text="Marca:" />
+
+    <EditText
+        android:id="@+id/txtMarcaEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDescripcionEquipo"
+        android:layout_alignStart="@+id/txtDescripcionEquipo"
+        android:layout_below="@+id/txtDescripcionEquipo"
+        android:width="120dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/lblModeloEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modelo:"
+        android:layout_alignBaseline="@+id/txtMarcaEquipo"
+        android:layout_alignBottom="@+id/txtMarcaEquipo"
+        android:layout_alignLeft="@+id/lblIdentificacionEquipo"
+        android:layout_alignStart="@+id/lblIdentificacionEquipo" />
+
+    <EditText
+        android:id="@+id/txtModeloEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="120dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="12dp"
+        android:layout_below="@+id/txtIdentificacionEquipo"
+        android:layout_alignLeft="@+id/txtIdentificacionEquipo"
+        android:layout_alignStart="@+id/txtIdentificacionEquipo" />
+
+    <TextView
+        android:id="@+id/lblSerieEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtSerieEquipo"
+        android:layout_alignBottom="@+id/txtSerieEquipo"
+        android:layout_alignLeft="@+id/lblMarcaEquipo"
+        android:layout_alignStart="@+id/lblMarcaEquipo"
+        android:text="Serie:" />
+
+    <EditText
+        android:id="@+id/txtSerieEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtMarcaEquipo"
+        android:layout_alignStart="@+id/txtMarcaEquipo"
+        android:layout_below="@+id/txtMarcaEquipo"
+        android:width="120dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/lblCapMaxEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capacidad Máxima:"
+        android:layout_alignBaseline="@+id/txtCapMaxEquipo"
+        android:layout_alignBottom="@+id/txtCapMaxEquipo"
+        android:layout_alignLeft="@+id/lblModeloEquipo"
+        android:layout_alignStart="@+id/lblModeloEquipo" />
+
+    <EditText
+        android:id="@+id/txtCapMaxEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="120dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="12dp"
+        android:layout_below="@+id/txtModeloEquipo"
+        android:layout_alignLeft="@+id/txtModeloEquipo"
+        android:layout_alignStart="@+id/txtModeloEquipo" />
+
+    <TextView
+        android:id="@+id/lblUbicacionEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtUbicacionEquipo"
+        android:layout_alignBottom="@+id/txtUbicacionEquipo"
+        android:layout_alignLeft="@+id/lblSerieEquipo"
+        android:layout_alignStart="@+id/lblSerieEquipo"
+        android:text="Ubicación:" />
+
+    <EditText
+        android:id="@+id/txtUbicacionEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtSerieEquipo"
+        android:layout_alignStart="@+id/txtSerieEquipo"
+        android:layout_below="@+id/txtSerieEquipo"
+        android:width="120dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/lblCapUsoEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtCapUsoEquipo"
+        android:layout_alignBottom="@+id/txtCapUsoEquipo"
+        android:layout_alignLeft="@+id/lblCapMaxEquipo"
+        android:layout_alignStart="@+id/lblCapMaxEquipo"
+        android:text="Capacidad de Uso:" />
+
+    <EditText
+        android:id="@+id/txtCapUsoEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="120dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="12dp"
+        android:layout_below="@+id/txtCapMaxEquipo"
+        android:layout_alignLeft="@+id/txtCapMaxEquipo"
+        android:layout_alignStart="@+id/txtCapMaxEquipo" />
+
+    <TextView
+        android:id="@+id/lblRangoEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtRangoEquipo"
+        android:layout_alignStart="@+id/txtRangoEquipo"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="11dp"
+        android:text="Rango:" />
+
+    <EditText
+        android:id="@+id/txtRangoEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblClaseEquipo"
+        android:layout_alignStart="@+id/lblClaseEquipo"
+        android:layout_below="@+id/lblRangoEquipo"
+        android:layout_marginTop="14dp"
+        android:width="120dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/lblDivision_eEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(e)"
+        android:layout_above="@+id/txtRangoEquipo"
+        android:layout_toEndOf="@+id/txtRangoEquipo"
+        android:layout_toRightOf="@+id/txtRangoEquipo" />
+
+    <EditText
+        android:id="@+id/txtDivision_eEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtRangoEquipo"
+        android:layout_toEndOf="@+id/txtRangoEquipo"
+        android:layout_toRightOf="@+id/txtRangoEquipo"
+        android:width="60dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="12dp" />
+
+    <RadioGroup
+        android:id="@+id/Opciones_unidad_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtDivision_dEquipo"
+        android:layout_toEndOf="@+id/txtDivision_eEquipo"
+        android:layout_toRightOf="@+id/txtDivision_eEquipo"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_kg_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+
+            android:checked="false"
+            android:text="kg" />
+
+        <RadioButton
+            android:id="@+id/radio_g_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="g" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblDivision_dEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(d)"
+        android:layout_alignBaseline="@+id/lblUnidad_d"
+        android:layout_alignBottom="@+id/lblUnidad_d"
+        android:layout_toRightOf="@+id/lblModeloEquipo"
+        android:layout_toEndOf="@+id/lblModeloEquipo" />
+
+    <EditText
+        android:id="@+id/txtDivision_dEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="60dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="12dp"
+        android:layout_alignBaseline="@+id/txtDivision_eEquipo"
+        android:layout_alignBottom="@+id/txtDivision_eEquipo"
+        android:layout_alignRight="@+id/lblIdentificacionEquipo"
+        android:layout_alignEnd="@+id/lblIdentificacionEquipo" />
+
+    <RadioGroup
+        android:id="@+id/Opciones_unidad_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtDivision_dEquipo"
+        android:layout_toEndOf="@+id/txtDivision_dEquipo"
+        android:layout_toRightOf="@+id/txtDivision_dEquipo"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_kg_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:checked="false"
+            android:text="kg" />
+
+        <RadioButton
+            android:id="@+id/radio_g_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="g" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblClaseEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:text="Clase:"
+        android:layout_below="@+id/Opciones_capacidad"
+        android:layout_alignRight="@+id/lblUbicacionEquipo"
+        android:layout_alignEnd="@+id/lblUbicacionEquipo" />
+
+    <CheckBox
+        android:id="@+id/chkClase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtClaseEquipo"
+        android:layout_marginEnd="-54dp"
+        android:layout_marginRight="-54dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toStartOf="@+id/Opciones_unidad_d"
+        android:layout_toLeftOf="@+id/Opciones_unidad_d"
+        android:checked="false"
+        android:duplicateParentState="false"
+        android:text="Camionera" />
+
+    <EditText
+        android:id="@+id/txtClaseEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblClaseEquipo"
+        android:layout_alignBottom="@+id/lblClaseEquipo"
+        android:layout_toEndOf="@+id/lblDescripcionEquipo"
+        android:layout_toRightOf="@+id/lblDescripcionEquipo"
+        android:width="150dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnActualizarEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        android:text="Actualizar"
+        android:layout_below="@+id/chkClase"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="79dp"
+        android:layout_marginEnd="79dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUbicacionEquipo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="División de Escala"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/lblUnidad_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Unidad:"
+        android:layout_alignBaseline="@+id/lblDivision_dEquipo"
+        android:layout_alignBottom="@+id/lblDivision_dEquipo"
+        android:layout_toRightOf="@+id/txtDivision_dEquipo"
+        android:layout_toEndOf="@+id/txtDivision_dEquipo"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:id="@+id/lblUnidad_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unidad:"
+        android:layout_alignBaseline="@+id/lblDivision_eEquipo"
+        android:layout_alignBottom="@+id/lblDivision_eEquipo"
+        android:layout_toRightOf="@+id/txtDivision_eEquipo"
+        android:layout_toEndOf="@+id/txtDivision_eEquipo" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Realizar la calibración utilizando:"
+        android:layout_below="@+id/Opciones_unidad_e"
+        android:layout_alignLeft="@+id/lblClaseEquipo"
+        android:layout_alignStart="@+id/lblClaseEquipo"
+        android:layout_marginTop="38dp" />
+
+    <RadioGroup
+        android:id="@+id/Opciones_calculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView28"
+        android:layout_toEndOf="@+id/textView28"
+        android:layout_toRightOf="@+id/textView28"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="(e)"
+            android:textColorLink="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:elegantTextHeight="true"
+            android:text="(d)"
+            android:textColorLink="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/Opciones_capacidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Opciones_calculo"
+        android:layout_alignLeft="@+id/Opciones_calculo"
+        android:layout_alignStart="@+id/Opciones_calculo">
+
+        <RadioButton
+            android:id="@+id/rdCapMAx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Cap. Máxima   "
+            android:textColorLink="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdCapUso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cap. Uso"
+            android:checked="false"
+            android:textColorLink="@color/colorPrimary"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtPr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/lblDescripcionEquipo"
+        android:layout_alignStart="@+id/lblDescripcionEquipo"
+        tools:text="Info" />
+
+    <TextView
+        android:id="@+id/lblLugarCalibración"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtDescripcionEquipo"
+        android:layout_alignLeft="@+id/txtPr1"
+        android:layout_alignStart="@+id/txtPr1"
+        android:layout_marginBottom="23dp"
+        android:text="Lugar de Calibración:" />
+
+    <EditText
+        android:id="@+id/txtLugarCalibracion_ve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblLugarCalibración"
+        android:layout_alignBottom="@+id/lblLugarCalibración"
+        android:layout_marginEnd="-172dp"
+        android:layout_marginRight="-172dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_toStartOf="@+id/lblIdentificacionEquipo"
+        android:layout_toLeftOf="@+id/lblIdentificacionEquipo"
+        android:ems="10"
+        android:inputType="text" />
+
+</RelativeLayout>

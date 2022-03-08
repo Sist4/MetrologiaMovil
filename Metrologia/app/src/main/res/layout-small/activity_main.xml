@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_encuadrado"
+    tools:backgroundTintMode="src_in"
+    tools:context="com.alexian.metrologia.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="89dp">
+
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingreso de Usuario"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lblUsuario"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.21"
+        android:text="Usuario:"
+        android:textSize="9dp"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="172dp"
+        android:layout_below="@+id/lblTitulo"
+        android:layout_alignRight="@+id/lblTitulo"
+        android:layout_alignEnd="@+id/lblTitulo" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="193dp"
+        android:layout_below="@+id/lblUsuario"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Contraseña:"
+        android:textSize="9dp"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="299dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txtContrasena"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtUsuario"
+        android:layout_alignStart="@+id/txtUsuario"
+        android:layout_below="@+id/textView5"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <Button
+        android:id="@+id/btnIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtContrasena"
+        android:text="Ingresar"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="391dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+</RelativeLayout>
+
+
+

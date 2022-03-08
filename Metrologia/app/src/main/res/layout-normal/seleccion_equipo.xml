@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lySeleEquip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_encuadrado">
+
+    <TextView
+        android:id="@+id/lblequipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="Selección de Equipo"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/lblequipo"
+        android:layout_marginTop="19dp"
+        android:text="Marca:"
+        android:textSize="12dp" />
+
+    <Spinner
+        android:id="@+id/spmarca"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spmodelo"
+        android:layout_alignStart="@+id/spmodelo"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spmodelo"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="17dp"
+        android:layout_toLeftOf="@+id/txtdescribe_enSeleccion"
+        android:layout_toStartOf="@+id/txtdescribe_enSeleccion"
+        android:text="Identificador |/| Modelo:"
+        android:textSize="12dp" />
+
+    <Spinner
+        android:id="@+id/spmodelo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSeleccionEquipo"
+        android:layout_alignStart="@+id/btnSeleccionEquipo"
+        android:layout_below="@+id/textView"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtdescribe_enSeleccion"
+        android:layout_alignBottom="@+id/txtdescribe_enSeleccion"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:text="Descripción:"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/txtdescribe_enSeleccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spmarca"
+        android:layout_alignRight="@+id/spmarca"
+        android:layout_below="@+id/spmarca"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="text"
+        android:selectAllOnFocus="false"
+        android:textSize="12dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnSeleccionEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Seleccionar"
+        android:textSize="12dp" />
+
+    <Switch
+        android:id="@+id/swDescarta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtdescribe_enSeleccion"
+        android:layout_alignRight="@+id/txtdescribe_enSeleccion"
+        android:layout_below="@+id/btnSeleccionEquipo"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:text="Descartar la calibración del equipo seleccionado."
+        android:textOff="Disponible"
+        android:textOn="Descarta"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/txtMotivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/swDescarta"
+        android:layout_alignLeft="@+id/swDescarta"
+        android:layout_alignRight="@+id/swDescarta"
+        android:layout_alignStart="@+id/swDescarta"
+        android:layout_below="@+id/swDescarta"
+        android:ems="10"
+        android:hint="Motivo"
+        android:inputType="textMultiLine"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btProcede"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtMotivo"
+        android:layout_alignRight="@+id/txtMotivo"
+        android:layout_below="@+id/txtMotivo"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="Proceder"
+        android:textSize="12dp" />
+
+</RelativeLayout>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageButton
+        android:id="@+id/Btn_Guardar"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="216dp"
+        android:layout_marginLeft="216dp"
+        android:layout_marginTop="324dp"
+        android:backgroundTint="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/visto_g" />
+
+    <EditText
+        android:id="@+id/Txt_CargaFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="309dp"
+        android:width="80dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="numberDecimal" />
+
+
+
+        <GridView
+            android:id="@+id/gvVistaAsc"
+            android:layout_width="405dp"
+            android:layout_height="330dp"
+            android:layout_alignTop="@+id/textView78"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="315dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp"
+            android:columnWidth="20dp"
+            android:horizontalSpacing="1dp"
+            android:numColumns="9"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+
+
+    <ImageButton
+        android:id="@+id/ibmas2"
+        android:layout_width="25dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="225dp"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="278dp"
+        android:backgroundTint="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ingresa_g" />
+
+    <ImageButton
+        android:id="@+id/ibborra"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="252dp"
+        android:layout_marginLeft="252dp"
+        android:layout_marginTop="278dp"
+        android:backgroundTint="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/borra_g" />
+
+    <ImageButton
+        android:id="@+id/ibvisto2"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="248dp"
+        android:layout_marginLeft="248dp"
+        android:layout_marginTop="181dp"
+        android:backgroundTint="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/visto_g">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/ibseteo"
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginLeft="219dp"
+        android:layout_marginTop="181dp"
+        android:backgroundTint="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/mancuerna_g" />
+
+    <ImageButton
+        android:id="@+id/ibvisto"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="436dp"
+        android:layout_marginLeft="436dp"
+        android:layout_marginTop="137dp"
+        android:backgroundTint="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/visto_g" />
+
+    <TextView
+        android:id="@+id/Lbl_Lectura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="272dp"
+        android:text="Lectura (Crg+P):" />
+
+    <EditText
+        android:id="@+id/txtLecturaCombinada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="263dp"
+        android:width="80dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/txtCrg_mas_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="213dp"
+        android:width="80dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/Lbl_Carga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtCrg_mas_peso"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="223dp"
+        android:text="Carga + pesas:" />
+
+    <EditText
+        android:id="@+id/txtMasPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="167dp"
+        android:width="80dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/Lbl_Masa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="188dp"
+        android:text="Masa en pesas:" />
+
+    <EditText
+        android:id="@+id/txtAjuste"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="381dp"
+        android:layout_marginLeft="381dp"
+        android:layout_marginTop="120dp"
+        android:width="80dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/Lbl_Ajuste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtAjuste"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="135dp"
+        android:text="Ajuste requerido:" />
+
+    <EditText
+        android:id="@+id/txtCrgSust_crg_asc"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="116dp"
+        android:width="80dp"
+        android:height="30dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/lbEtiq_crg_sust_crg_asc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtCrgSust_crg_asc"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="-51dp"
+        android:text="Carga de Sustitución:"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="74dp"
+        android:text="CARGA DE SUSTITUCION Nº:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btAplicar_Crg_asc"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="305dp"
+        android:layout_marginLeft="305dp"
+        android:layout_marginTop="337dp"
+        android:text="Aplicar Crg. Sust." />
+
+    <TextView
+        android:id="@+id/Lbl_ContadorActual"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="424dp"
+        android:layout_marginLeft="424dp"
+        android:layout_marginTop="67dp"
+        android:text="1"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/Txt_Contador"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="189dp"
+        android:layout_marginLeft="189dp"
+
+        android:layout_marginTop="60dp"
+        android:text="0"
+        android:textColor="#F44336"
+        android:textColorHint="#00E44141"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="477dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="1dp"
+        android:text="INICIAR CARGAS DE SUSTITUCION"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Lbl_CargaDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="323dp"
+        android:text="Lectura desc:" />
+
+
+</RelativeLayout>

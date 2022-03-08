@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyExii_2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_encuadrado"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/excentricidad2_g" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Prueba de Excentricidad (Exc.) 2"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="100dp"
+        android:text="Carga (1/3 Max.):" />
+
+    <EditText
+        android:id="@+id/txtCargaExc_ii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="80dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/textView17"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_toRightOf="@+id/textView17"
+        android:layout_toEndOf="@+id/textView17" />
+
+    <ImageButton
+        android:id="@+id/ibSelecCarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mancuerna"
+        tools:style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_alignBottom="@+id/txtCargaExc_ii"
+        android:layout_alignRight="@+id/btGuarda"
+        android:layout_alignEnd="@+id/btGuarda" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_below="@+id/txtCargaExc_ii"
+        android:layout_marginTop="37dp"
+        android:text="POS. 1:" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtpos2"
+        android:layout_alignBottom="@+id/txtpos2"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:text="POS. 2:" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POS. 3:"
+        android:layout_alignBaseline="@+id/txtpos3"
+        android:layout_alignBottom="@+id/txtpos3"
+        android:layout_alignRight="@+id/textView23"
+        android:layout_alignEnd="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POS. 4:"
+        android:layout_alignBaseline="@+id/txtpos4"
+        android:layout_alignBottom="@+id/txtpos4"
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POS. 5:"
+        android:layout_alignBaseline="@+id/txtpos5"
+        android:layout_alignBottom="@+id/txtpos5"
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtExct_max_iii"
+        android:layout_alignBottom="@+id/txtExct_max_iii"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/txtpos5"
+        android:layout_toStartOf="@+id/txtpos5"
+        android:text="Exct. máx:" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_e_m_p_ex_iii"
+        android:layout_alignBottom="@+id/txt_e_m_p_ex_iii"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23"
+        android:text="e.m.p.:" />
+
+    <EditText
+        android:id="@+id/txtpos1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:ems="10"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="numberDecimal"
+        tools:height="30dp"
+        android:layout_alignBaseline="@+id/textView18"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_toRightOf="@+id/textView18"
+        android:layout_toEndOf="@+id/textView18"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <EditText
+        android:id="@+id/txtpos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtpos1"
+        android:layout_alignStart="@+id/txtpos1"
+        android:layout_below="@+id/txtpos1"
+        android:width="100dp"
+        android:ems="10"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="numberDecimal"
+        tools:height="30dp" />
+
+    <EditText
+        android:id="@+id/txtpos3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtpos2"
+        android:layout_alignStart="@+id/txtpos2"
+        android:layout_below="@+id/txtpos2"
+        android:width="100dp"
+        android:ems="10"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="numberDecimal"
+        tools:height="30dp" />
+
+    <EditText
+        android:id="@+id/txtpos4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtpos3"
+        android:layout_alignStart="@+id/txtpos3"
+        android:layout_below="@+id/txtpos3"
+        android:textColor="@color/colorPrimaryDark"
+        android:width="100dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:height="30dp" />
+
+    <EditText
+        android:id="@+id/txtpos5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtpos4"
+        android:layout_alignStart="@+id/txtpos4"
+        android:layout_below="@+id/txtpos4"
+        android:width="100dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:height="30dp" />
+
+    <EditText
+        android:id="@+id/txtExct_max_iii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/txtpos5"
+        android:layout_toRightOf="@+id/textView23"
+        android:layout_toEndOf="@+id/textView23" />
+
+    <EditText
+        android:id="@+id/txt_e_m_p_ex_iii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/txtExct_max_iii"
+        android:layout_alignLeft="@+id/txtExct_max_iii"
+        android:layout_alignStart="@+id/txtExct_max_iii" />
+
+    <Button
+        android:id="@+id/btGuarda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_e_m_p_ex_iii"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/txtCargaExc_ii"
+        android:layout_toRightOf="@+id/txtCargaExc_ii"
+        android:text="Guardar" />
+
+    <TextView
+        android:id="@+id/lblResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_alignBaseline="@+id/txt_e_m_p_ex_iii"
+        android:layout_alignBottom="@+id/txt_e_m_p_ex_iii"
+        android:layout_toRightOf="@+id/lblUnidad_exii_2"
+        android:layout_toEndOf="@+id/lblUnidad_exii_2" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:text="2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lblFormula_exii_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/lblUnidad_exii_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignTop="@+id/textView17"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/txtCargaExc_ii"
+        android:layout_toRightOf="@+id/txtCargaExc_ii" />
+
+</RelativeLayout>

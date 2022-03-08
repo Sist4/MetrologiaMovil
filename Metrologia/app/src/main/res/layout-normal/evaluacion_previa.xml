@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LyEval"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_encuadrado">
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="EVALUACIÓN PREVIA"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView36"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:text="PRUEBAS"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="REPETIBILIDAD"
+        android:layout_below="@+id/textView37"
+        android:layout_toRightOf="@+id/textView37"
+        android:layout_toEndOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/lblResRepetibilidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        tools:text="CRep"
+        android:layout_below="@+id/textView50"
+        android:layout_alignLeft="@+id/textView50"
+        android:layout_alignStart="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXCENTRICIDAD"
+        android:layout_alignBaseline="@+id/textView50"
+        android:layout_alignBottom="@+id/textView50"
+        android:layout_toLeftOf="@+id/textView54"
+        android:layout_toStartOf="@+id/textView54"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <TextView
+        android:id="@+id/lblResExcentricidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        tools:text="cExc"
+        android:layout_below="@+id/textView52"
+        android:layout_alignLeft="@+id/textView52"
+        android:layout_alignStart="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CARGA"
+        android:layout_alignBaseline="@+id/textView52"
+        android:layout_alignBottom="@+id/textView52"
+        android:layout_toRightOf="@+id/textView36"
+        android:layout_toEndOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/lblResCarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        tools:text="cCar"
+        android:layout_below="@+id/textView54"
+        android:layout_alignLeft="@+id/textView54"
+        android:layout_alignStart="@+id/textView54" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView54"
+        android:layout_alignLeft="@+id/textView37"
+        android:layout_alignRight="@+id/textView54"
+        android:layout_alignStart="@+id/textView37"
+        android:layout_below="@+id/lblResRepetibilidad"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="9dp"
+        android:text="El certificado de Calibración del Equipo, será entregado en un plazo máximo de 15 días después de realizada la calibración. "
+        android:textSize="12dp"
+        android:textStyle="bold|italic"
+        tools:lines="3" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Realizado por:"
+        android:layout_below="@+id/textView56"
+        android:layout_alignLeft="@+id/textView56"
+        android:layout_alignStart="@+id/textView56" />
+
+    <TextView
+        android:id="@+id/lblMetrologo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        tools:text="lMet"
+        android:layout_alignBaseline="@+id/txtRecibido"
+        android:layout_alignBottom="@+id/txtRecibido"
+        android:layout_alignLeft="@+id/textView57"
+        android:layout_alignStart="@+id/textView57" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="Aceptado por:"
+        android:layout_alignBaseline="@+id/textView57"
+        android:layout_alignBottom="@+id/textView57"
+        android:layout_toRightOf="@+id/lblResExcentricidad"
+        android:layout_toEndOf="@+id/lblResExcentricidad" />
+
+    <EditText
+        android:id="@+id/txtRecibido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12dp"
+        android:layout_below="@+id/textView59"
+        android:layout_alignLeft="@+id/textView59"
+        android:layout_alignStart="@+id/textView59"
+        android:layout_alignRight="@+id/textView54"
+        android:layout_alignEnd="@+id/textView54" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRÓXIMA CALIBRACIÓN SUGERIDA:"
+        android:textSize="12dp"
+        android:layout_alignBaseline="@+id/chbNoEspecifica"
+        android:layout_alignBottom="@+id/chbNoEspecifica"
+        android:layout_alignLeft="@+id/textView37"
+        android:layout_alignStart="@+id/textView37" />
+
+    <EditText
+        android:id="@+id/txtFechaProx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible"
+        android:textSize="12dp"
+        android:layout_alignBaseline="@+id/btFinaliza_Proy"
+        android:layout_alignBottom="@+id/btFinaliza_Proy"
+        android:layout_alignLeft="@+id/dtproxima"
+        android:layout_alignStart="@+id/dtproxima"
+        android:layout_toLeftOf="@+id/textView36"
+        android:layout_toStartOf="@+id/textView36" />
+
+
+    <Button
+        android:id="@+id/btFinaliza_Proy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FINALIZAR CALIBRACIÓN DEL EQUIPO"
+        android:textSize="12dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <DatePicker
+        android:id="@+id/dtproxima"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:calendarTextColor="@color/colorPrimaryDark"
+        android:calendarViewShown="?android:attr/windowTranslucentStatus"
+        android:datePickerMode="spinner"
+        android:textSize="12dp"
+        android:layout_below="@+id/chbNoEspecifica"
+        android:layout_alignLeft="@+id/textView60"
+        android:layout_alignStart="@+id/textView60"
+        android:layout_alignRight="@+id/txtRecibido"
+        android:layout_alignEnd="@+id/txtRecibido" />
+
+    <CheckBox
+        android:id="@+id/chbNoEspecifica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No especifica"
+        android:textSize="12dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/txtRecibido"
+        android:layout_toRightOf="@+id/textView60"
+        android:layout_toEndOf="@+id/textView60"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+</RelativeLayout>

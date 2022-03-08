@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:text="Descarte de Equipos"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Switch
+        android:id="@+id/swDescarta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:textSize="14dp"
+        android:text="Descartar la calibración del equipo seleccionado."
+        android:textOff="Disponible"
+        android:textOn="Descarta"
+        android:layout_below="@+id/textView74"
+        android:layout_alignLeft="@+id/textView74"
+        android:layout_alignStart="@+id/textView74"
+        android:layout_alignRight="@+id/textView74"
+        android:layout_alignEnd="@+id/textView74" />
+
+    <EditText
+        android:id="@+id/txtMotivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Motivo"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/swDescarta"
+        android:layout_alignLeft="@+id/swDescarta"
+        android:layout_alignStart="@+id/swDescarta"
+        android:layout_alignRight="@+id/swDescarta"
+        android:layout_alignEnd="@+id/swDescarta" />
+
+    <Button
+        android:id="@+id/btProcede"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMotivo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Continuar" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView73"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="11dp"
+        android:text="Si desea descartar la calibración del equipo seleccionado, por favor active el switch correspondiente e ingrese el motivo. Caso contrario, toque el botón continuar." />
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/logo_encuadrado"
+android:id="@+id/lyVisual"
+    tools:ignore="MissingDefaultResource">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:width="500dp"
+        android:text="Inspección Visual"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Switch
+        android:id="@+id/swVisual1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="71dp"
+        android:checked="true"
+        android:lines="3"
+        android:showText="true"
+        android:splitTrack="false"
+        android:text="1. La balanza se encuentra limpia y libre de cualquier elemento que impida su calibración:       "
+        android:textOff="NO"
+        android:textOn="SI" />
+
+    <Switch
+        android:id="@+id/swVisual2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/swVisual1"
+        android:layout_alignLeft="@+id/swVisual1"
+        android:layout_alignRight="@+id/swVisual1"
+        android:layout_alignStart="@+id/swVisual1"
+        android:layout_below="@+id/swVisual1"
+        android:layout_marginTop="25dp"
+        android:checked="true"
+        android:showText="true"
+        android:text="2. Existe algún ajustador al momento de la calibración:         "
+        android:textOff="NO"
+        android:textOn="SI" />
+
+    <Switch
+        android:id="@+id/swVisual3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/swVisual2"
+        android:layout_alignLeft="@+id/swVisual2"
+        android:layout_alignRight="@+id/swVisual2"
+        android:layout_alignStart="@+id/swVisual2"
+        android:layout_below="@+id/swVisual2"
+        android:layout_marginTop="44dp"
+        android:checked="true"
+        android:lines="3"
+        android:showText="true"
+        android:text="3. La balanza se encuentra con una adecuada iluminación que permita la visualización del display, fuente de alimentación, regulación de voltaje:    "
+        android:textOff="NO"
+        android:textOn="SI" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="OBSERVACIONES:"
+        android:layout_below="@+id/swVisual3"
+        android:layout_alignLeft="@+id/swVisual3"
+        android:layout_alignStart="@+id/swVisual3" />
+
+    <EditText
+        android:id="@+id/txtObs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/textView61"
+        android:layout_alignLeft="@+id/textView61"
+        android:layout_alignStart="@+id/textView61"
+        android:layout_alignRight="@+id/swVisual3"
+        android:layout_alignEnd="@+id/swVisual3" />
+
+    <Button
+        android:id="@+id/btGuardaVisuales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtObs"
+        android:layout_alignRight="@+id/txtObs"
+        android:layout_below="@+id/txtObs"
+        android:layout_marginTop="79dp"
+        android:text="GUARDAR" />
+
+</RelativeLayout>

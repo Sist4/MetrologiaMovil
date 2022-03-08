@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_encuadrado"
+    tools:ignore="MissingDefaultResource">
+
+
+    <TextView
+        android:id="@+id/lblCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginLeft="78dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="32dp"
+        android:text="Cliente:" />
+
+    <EditText
+        android:id="@+id/txtCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblCliente"
+        android:layout_alignBottom="@+id/lblCliente"
+        android:layout_alignLeft="@+id/btnActualizar"
+        android:layout_alignStart="@+id/btnActualizar"
+        android:textSize="12dp"
+        android:width="300dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/lblDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDireccion"
+        android:layout_alignBottom="@+id/txtDireccion"
+        android:layout_alignEnd="@+id/lblTelefono"
+        android:layout_alignRight="@+id/lblTelefono"
+        android:text="Dirección:" />
+
+    <EditText
+        android:id="@+id/txtDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtCliente"
+        android:layout_alignStart="@+id/txtCliente"
+        android:layout_below="@+id/txtCliente"
+        android:width="300dp"
+        android:textSize="12dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/lblCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtCiudad"
+        android:layout_alignBottom="@+id/txtCiudad"
+        android:layout_alignLeft="@+id/lblCliente"
+        android:layout_alignStart="@+id/lblCliente"
+        android:text="Ciudad:" />
+
+    <EditText
+        android:id="@+id/txtCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDireccion"
+        android:layout_alignStart="@+id/txtDireccion"
+        android:layout_below="@+id/txtDireccion"
+        android:width="300dp"
+        android:textSize="12dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/lblTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtTelefono"
+        android:layout_alignBottom="@+id/txtTelefono"
+        android:layout_alignLeft="@+id/lblCiudad"
+        android:layout_alignStart="@+id/lblCiudad"
+        android:text="Teléfono:" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:ems="10"
+        android:textSize="12dp"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/txtCiudad"
+        android:layout_alignLeft="@+id/txtCiudad"
+        android:layout_alignStart="@+id/txtCiudad" />
+
+    <TextView
+        android:id="@+id/lblRuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtRuc"
+        android:layout_alignBottom="@+id/txtRuc"
+        android:layout_alignLeft="@+id/lblTelefono"
+        android:layout_alignStart="@+id/lblTelefono"
+        android:text="R.U.C / C. I.:" />
+
+    <EditText
+        android:id="@+id/txtRuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtTelefono"
+        android:layout_alignLeft="@+id/txtTelefono"
+        android:layout_alignRight="@+id/txtTelefono"
+        android:layout_alignStart="@+id/txtTelefono"
+        android:layout_below="@+id/txtTelefono"
+        android:width="300dp"
+        android:textSize="12dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/lblLugarCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtLugarCal"
+        android:layout_alignBottom="@+id/txtLugarCal"
+        android:layout_alignLeft="@+id/lblRuc"
+        android:layout_alignStart="@+id/lblRuc"
+        android:text="Lugar de Calibración:"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/txtLugarCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtSolicitado"
+        android:layout_alignStart="@+id/txtSolicitado"
+        android:layout_below="@+id/txtSolicitado"
+        android:width="300dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/lblSolicitado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtSolicitado"
+        android:layout_alignBottom="@+id/txtSolicitado"
+        android:layout_alignLeft="@+id/lblLugarCal"
+        android:layout_alignStart="@+id/lblLugarCal"
+        android:text="Solicitado por:" />
+
+    <EditText
+        android:id="@+id/txtSolicitado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:textSize="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/txtRuc"
+        android:layout_alignLeft="@+id/txtRuc"
+        android:layout_alignStart="@+id/txtRuc" />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Actualizar"
+        android:layout_below="@+id/txtLugarCal"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Datos del Cliente"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+</RelativeLayout>

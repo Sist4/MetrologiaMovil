@@ -1,0 +1,46 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: 1.5.0_22 (Sun Microsystems Inc.)
+Built-By: User
+Build-Jdk: 1.5.0_22
+Implementation-Title: Commons Net
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.0.1
+Specification-Title: Commons Net
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.0.1
+X-Compile-Source-JDK: 1.5
+X-Compile-Target-JDK: 1.5
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Import-Package: javax.crypto,javax.crypto.spec,javax.net,javax.net.ssl
+Bnd-LastModified: 1307038464968
+Export-Package: org.apache.commons.net.smtp;version="3.0.1",org.apache
+ .commons.net.ftp;version="3.0.1",org.apache.commons.net.pop3;version=
+ "3.0.1",org.apache.commons.net.daytime;version="3.0.1",org.apache.com
+ mons.net.imap;version="3.0.1",org.apache.commons.net.chargen;version=
+ "3.0.1",org.apache.commons.net.discard;version="3.0.1",org.apache.com
+ mons.net.util;version="3.0.1",org.apache.commons.net.tftp;version="3.
+ 0.1",org.apache.commons.net.ntp;version="3.0.1",org.apache.commons.ne
+ t.bsd;version="3.0.1",org.apache.commons.net.io;version="3.0.1",org.a
+ pache.commons.net.time;version="3.0.1",org.apache.commons.net.telnet;
+ version="3.0.1",org.apache.commons.net.echo;version="3.0.1",org.apach
+ e.commons.net.whois;version="3.0.1",org.apache.commons.net.ftp.parser
+ ;version="3.0.1",org.apache.commons.net.nntp;version="3.0.1",org.apac
+ he.commons.net;version="3.0.1",org.apache.commons.net.finger;version=
+ "3.0.1"
+Bundle-Version: 3.0.1
+Bundle-Name: Commons Net
+Bundle-Description: Apache Commons Net library contains a collection o
+ f network utilities and protocol implementations.Supported protocols 
+ include: Echo, Finger, FTP, NNTP, NTP, POP3(S), SMTP(S), Telnet, Whois
+Private-Package: examples.cidr;version="3.0.1",examples.ftp;version="3
+ .0.1",examples.mail;version="3.0.1",examples.nntp;version="3.0.1",exa
+ mples.ntp;version="3.0.1",examples.telnet;version="3.0.1",examples.un
+ ix;version="3.0.1",examples.util;version="3.0.1"
+Bundle-DocURL: http://commons.apache.org/net/
+Bundle-ManifestVersion: 2
+Bundle-Vendor: The Apache Software Foundation
+Bundle-SymbolicName: org.apache.commons.net
+Tool: Bnd-0.0.255
+

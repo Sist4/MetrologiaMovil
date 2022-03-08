@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_encuadrado"
+    tools:backgroundTintMode="src_in"
+    tools:context="com.alexian.metrologia.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="89dp">
+
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Ingreso de Usuario"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/lblUsuario"
+        android:layout_alignStart="@+id/lblUsuario" />
+
+    <TextView
+        android:id="@+id/lblUsuario"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.21"
+        android:text="Usuario:"
+        android:textSize="17dp"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="172dp"
+        android:layout_below="@+id/lblTitulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="193dp"
+        android:layout_below="@+id/lblUsuario"
+        android:layout_alignLeft="@+id/lblUsuario"
+        android:layout_alignStart="@+id/lblUsuario" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lblUsuario"
+        android:layout_alignLeft="@+id/lblUsuario"
+        android:layout_alignRight="@+id/lblUsuario"
+        android:layout_alignStart="@+id/lblUsuario"
+        android:layout_below="@+id/txtUsuario"
+        android:layout_marginTop="34dp"
+        android:text="Contraseña:"
+        android:textSize="17dp"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <EditText
+        android:id="@+id/txtContrasena"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="320dp"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btnIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtContrasena"
+        android:layout_alignRight="@+id/txtContrasena"
+        android:layout_below="@+id/txtContrasena"
+        android:layout_marginTop="56dp"
+        android:text="Ingresar"
+        android:textStyle="italic"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="391dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIngreso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="App disponible para dispositivos tipo Tableta. Si requiere ejecutar en dispositivos de menor tamaño (tipo Smartphone), contactese con el desarrollador. "
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtContrasena"
+        android:layout_alignStart="@+id/txtContrasena"
+        android:layout_below="@+id/btnIngreso"
+        android:layout_marginTop="74dp"
+        android:text="Developed by: Sistemas Informáticos Alexian - Versión: 16.3.1.2-B"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
+
+
+

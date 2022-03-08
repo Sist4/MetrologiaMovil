@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_encuadrado">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Toma de Condiciones Ambientales (Iniciales)"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:text="Temperatura Inicial:"
+        android:layout_above="@+id/textView13"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/txtTempFinal"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="58dp"
+        android:layout_toRightOf="@+id/textView13"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:width="60dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/txtTempFinal"
+        android:layout_toRightOf="@+id/txtTempFinal"
+        android:text="°" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/txtTempFinal"
+        android:layout_marginTop="60dp"
+        android:text="Humedad Relativa Inicial:" />
+
+    <EditText
+        android:id="@+id/txtHumedadFinal"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtTempFinal"
+        android:layout_alignLeft="@+id/txtTempFinal"
+        android:layout_alignRight="@+id/txtTempFinal"
+        android:layout_alignStart="@+id/txtTempFinal"
+        android:layout_below="@+id/txtTempFinal"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:text="%" />
+
+    <Button
+        android:id="@+id/btnGuardarAmbientales"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Guardar"
+        android:layout_below="@+id/txtHumedadFinal"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

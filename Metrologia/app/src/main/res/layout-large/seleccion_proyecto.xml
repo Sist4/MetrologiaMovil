@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_encuadrado"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lblTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="Seleccione Proyecto:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblTitulo"
+            android:layout_marginTop="76dp"
+            android:layout_toEndOf="@+id/ibtRecarga"
+            android:layout_toRightOf="@+id/ibtRecarga"
+            android:text="Identificador:" />
+
+        <Spinner
+            android:id="@+id/spnProyecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_alignRight="@+id/textView58"
+            android:layout_alignEnd="@+id/textView58"
+            android:layout_alignBottom="@+id/textView3" />
+
+        <Button
+            android:id="@+id/btnSeleccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:layout_toEndOf="@+id/btauxilia"
+            android:layout_toRightOf="@+id/btauxilia"
+            android:elevation="3dp"
+            android:text="Seleccionar"
+            android:textColorLink="@android:color/holo_blue_dark" />
+
+        <ImageButton
+            android:id="@+id/ibtRecarga"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView58"
+            android:layout_alignStart="@+id/textView58"
+            android:layout_below="@+id/btnSeleccion"
+            android:layout_marginTop="197dp"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@drawable/reint_g" />
+
+        <ImageButton
+            android:id="@+id/imsqlite"
+            style="@android:style/Widget.Holo.Light.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@drawable/sqlite_bl" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ibtRecarga"
+            android:layout_marginTop="22dp"
+            android:layout_toEndOf="@+id/imsqlite"
+            android:layout_toRightOf="@+id/imsqlite"
+            android:text="Recargar Información desde el Servidor FTP." />
+
+        <Button
+            android:id="@+id/btauxilia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="215dp"
+            android:layout_toEndOf="@+id/imsqlite"
+            android:layout_toRightOf="@+id/imsqlite"
+            android:text="Reenviar Datos de proyectos concluidos."
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btAdiciona_equ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView58"
+            android:layout_marginTop="47dp"
+            android:layout_toEndOf="@+id/btauxilia"
+            android:layout_toRightOf="@+id/btauxilia"
+            android:text="@string/adicionar_equipo_para_calibraci_n" />
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spnProyecto"
+            android:layout_alignStart="@+id/spnProyecto"
+            android:layout_below="@+id/btnSeleccion"
+            android:layout_marginTop="44dp"
+            tools:text="Info" />
+
+    </RelativeLayout>
+</LinearLayout>
